@@ -4,11 +4,12 @@ const htmlUnescapes = {
   '&lt;': '<',
   '&gt;': '>',
   '&quot;': '"',
-  '&#39;': "'"
+  '&#39;': "'",
+  '&#039;': "'",
 }
 
 /** Used to match HTML entities and HTML characters. */
-const reEscapedHtml = /&(?:amp|lt|gt|quot|#39);/g
+const reEscapedHtml = /&(?:amp|lt|gt|quot|#39|#039);/g
 const reHasEscapedHtml = RegExp(reEscapedHtml.source)
 
 /**
